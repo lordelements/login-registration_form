@@ -20,13 +20,14 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Start your project here-->
-    <div class="container-fluid mt-5 w-50 h-1000vh">
+    <div class="container-fluid mt-3 w-50">
       <div class="shadow-inner">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Student Registration Form</h5>
+        <hr>
         <p class="card-text">Fill out the form carefully for registration.</p>
         
       <div class="d-flex justify-content-center align-items-center">
@@ -45,12 +46,20 @@
               <div class="valid-feedback">Looks good!</div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="input-group form-outline">
               <span class="input-group-text" id="inputGroupPrepend"><i class="fa-sharp fa-solid fa-envelope"></i></span>
               <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
               <label for="validationCustomUsername" class="form-label">Username</label>
               <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group form-outline">
+              <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-phone-flip"></i></span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+              <label for="validationCustomUsername" class="form-label">Phone number</label>
+              <div class="invalid-feedback">Fill up your phone number.</div>
             </div>
           </div>
           <div class="col-md-6 mt-4">
@@ -78,42 +87,57 @@
             </div>
           </div>
           <div class="col-md-6 mt-4">
-          <div class="input-group form-outline">
-              <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-venus-mars"></i></span>
-              <input type="text" name="address" class="form-control" 
-              id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
-              <label for="validationCustomUsername" class="form-label">Gender</label>
-              <div class="invalid-feedback">Fill up your gender.</div>
-            </div>
-          </div>
-          <div class="col-md-6">
-             <div class="input-group form-outline">
-                <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-location-dot"></i></span>
-                <input type="text" name="address" class="form-control" 
-                id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
-                <label for="validationCustomUsername" class="form-label">Address</label>
-                <div class="invalid-feedback">Fill up your address.</div>
-            </div>
-          </div>
-          <div class="col-md-6">
             <div class="input-group form-outline">
               <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-input-numeric"></i></span>
-              <input type="text" name="age" class="form-control" 
+              <input type="number" name="age" class="form-control"  min="07" max="100"
               id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
               <label for="validationCustomUsername" class="form-label">Age</label>
               <div class="invalid-feedback">Fill up your age.</div>
-          </div>
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-              <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-              <div class="invalid-feedback">You must agree before submitting.</div>
             </div>
           </div>
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit" name="register">Register</button>
-          </div>
+          <div class="col-md-12 mt-4">
+            <div class="input-group form-outline">
+               <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-location-dot"></i></span>
+               <input type="text" name="address" class="form-control" 
+               id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+               <label for="validationCustomUsername" class="form-label">Address</label>
+               <div class="invalid-feedback">Fill up your address.</div>
+           </div>
+         </div>
+          
+          <div class="col-md-12 mt-4">
+            <div class="input-group">
+              <h6 class="card-title">Gender</h6>
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male" />
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female" />
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="others"/>
+                  <label class="form-check-label" for="inlineRadio3">Others</label>
+                </div>
+              </div>
+                <div class="col-12 mt-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                    <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+                <div class="col-12 mt-1">
+                  <div class="form-check">
+                    <label class="form-check-label" for="invalidCheck">Already have an account<a href="login.html"> Sign-in here</a></label>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <button class="btn btn-primary" type="submit" name="register">Register</button>
+                </div>
         </form>
       </div>
     </div>

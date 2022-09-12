@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+
+  <body class="bg-light">
+    <!-- Start your project here-->
+    <div class="container-fluid mt-5 w-50">
+      <div class="shadow-inner">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Login Form</h5>
+        <hr>
+        <p class="card-text">Fill out the form carefully for login.</p>
+        
+      <div class="d-flex justify-content-center align-items-center">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <div class="input-group form-outline">
+              <span class="input-group-text" id="inputGroupPrepend"><i class="fa-sharp fa-solid fa-envelope"></i></span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="input-group form-outline">
+              <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+              <label for="validationCustomUsername" class="form-label">Password</label>
+              <div class="invalid-feedback">Please provide a valid password.</div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="input-group form-outline">
+              <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+              <label for="validationCustomUsername" class="form-label">Confirm Password</label>
+              <div class="invalid-feedback">Please confirm valid password.</div>
+            </div>
+          </div>
+        <div class="col-12 mt-2">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+            </div>
+        </div>
+        <div class="col-12 mt-1">
+            <div class="form-check">
+            <label class="form-check-label" for="invalidCheck">Dont have account<a href="index.html"> Sign-in here</a></label>
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <button class="btn btn-primary" type="submit" name="register">Login</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+
+     // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict';
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation');
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms).forEach((form) => {
+            form.addEventListener('submit', (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        })();
+    </script>
+  </body>
+</html>
